@@ -3,6 +3,7 @@
   --ixam-blue: #4c11ab;
   --ixam-deep-blue: #1f0746;
   --ixam-green: #97d139;
+  --ixam-blue-header: #1f0746;
 }
 
 @font-face {
@@ -52,9 +53,11 @@
 }
 
 .ixam-deep-blue-color {
-  columns: var(--ixam-deep-blue) !important;
+  color: var(--ixam-deep-blue) !important;
 }
-
+.line-height-27 {
+  line-height: 27.2px;
+}
 .ixam-blue-bg {
   background: var(--ixam-blue) !important;
 }
@@ -63,8 +66,24 @@
   color: var(--ixam-dark) !important;
 }
 
+.ixam-blue-header-color {
+  color: var(--ixam-blue-header);
+}
+
+.vertL {
+  height: 5px;
+  width: 3vw;
+  background: var(--ixam-green);
+}
+
 ul {
-    padding: unset;
+  padding: unset;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.8) !important;
+  -webkit-backdrop-filter: blur(2px) !important;
+  backdrop-filter: blur(2px) !important;
 }
 
 .hero-1 {
@@ -88,22 +107,22 @@ ul {
 
 @keyframes animate {
   0% {
-    background: url(../img/ixam-bg2.png);
-    background-position: center;
-    background-size: cover;
-  }
-  25% {
-    background: url(../img/ixam-bg1.png);
-    background-position: center;
-    background-size: cover;
-  }
-  50% {
     background: url(../img/ixam-bg.png);
     background-position: center;
     background-size: cover;
   }
-  75% {
+  25% {
     background: url(../img/ixam-bg2.png);
+    background-position: center;
+    background-size: cover;
+  }
+  50% {
+    background: url(../img/ixam-bg1.png);
+    background-position: center;
+    background-size: cover;
+  }
+  75% {
+    background: url(../img/ixam-bg.png);
     background-position: center;
     background-size: cover;
   }
@@ -149,115 +168,157 @@ ul {
 }
 
 section .about .card {
-    background: url(../img/q-mark.png);
-    background-repeat: no-repeat;
-    background-position: right, center;
-    max-width: 397px;
-    max-height: 99px;
-    box-shadow: 0px 4px 8px rgba(41, 9, 93, 0.1);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-  }
-  
-  section .about .card.mid {
-    background: url(../img/q-mark1.png);
-    background-repeat: no-repeat;
-    background-position: right, center;
-  }
-  
-  section .wave .wave-content {
-    background: url(../img/wave.svg);
-  }
-  
-  section .wave  {
-      background: linear-gradient(276.74deg, #2B0A61 -1.03%, #4C11AB 96.89%);
-  }
+  background: url(../img/q-mark.png);
+  background-repeat: no-repeat;
+  background-position: right, center;
+  max-width: 397px;
+  max-height: 99px;
+  box-shadow: 0px 4px 8px rgba(41, 9, 93, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
 
-  section .wave .wave-content p {
-      max-width: 842px;
-  }
-  
-  section .delivery {
-    background: url(../img/color-rectangle.png);
-    background-repeat: no-repeat;
-    background-position: right, center;
-    height: 450px;
-  }
+section .about .card.mid {
+  background: url(../img/q-mark1.png);
+  background-repeat: no-repeat;
+  background-position: right, center;
+}
+
+section .wave .wave-content {
+  background: url(../img/wave.svg);
+}
+
+section .wave {
+  background: linear-gradient(276.74deg, #2b0a61 -1.03%, #4c11ab 96.89%);
+}
+
+section .wave .wave-content p {
+  max-width: 842px;
+}
+
+section .delivery {
+  background: url(../img/color-rectangle.png);
+  background-repeat: no-repeat;
+  background-position: right, center;
+  height: 450px;
+}
 section .handle {
-    background: url(../img/two-ladies.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-    min-height: 219px;
-    border-radius: 12px;
+  background: url(../img/two-ladies.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  min-height: 219px;
+  border-radius: 12px;
 }
 .handle-1 {
-    background: rgba(43, 10, 97, 0.7);
-    background-size: cover;
-    width: 100%; 
-    min-height: 219px; 
-    border-radius: 12px; 
+  background: rgba(43, 10, 97, 0.7);
+  background-size: cover;
+  width: 100%;
+  min-height: 219px;
+  border-radius: 12px;
 }
 .handle-2 {
-    background: url(../img/Ellipse-2.png), url(../img/Ellipse-1.png);
-    background-repeat: no-repeat;
-    background-position: bottom left, top right;
-    background-size: 15%;
-    padding: 0;  
-    min-height: 219px;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  background: url(../img/Ellipse-2.png), url(../img/Ellipse-1.png);
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+  background-size: 15%;
+  padding: 0;
+  min-height: 219px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 section .priotise {
-    background: url(../img/cyber-space.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-    min-height: 219px;
-    border-radius: 12px;
+  background: url(../img/cyber-space.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  min-height: 219px;
+  border-radius: 12px;
 }
 section .lunch {
-    background: url(../img/hands-on-paper.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-    min-height: 400px;
-    border-radius: 12px;
+  background: url(../img/hands-on-paper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  min-height: 400px;
+  border-radius: 12px;
 }
 .lunch-1 {
-    background: rgba(43, 10, 97, 0.7);
-    background-size: cover;
-    width: 100%; 
-    min-height: 400px;
-    border-radius: 12px; 
+  background: rgba(43, 10, 97, 0.7);
+  background-size: cover;
+  width: 100%;
+  min-height: 400px;
+  border-radius: 12px;
 }
 .lunch-2 {
-    background: url(../img/Ellipse-2.png), url(../img/Ellipse-1.png);
-    background-repeat: no-repeat;
-    background-position: bottom left, top right;
-    background-size: 15%;
-    padding: 0;  
-    min-height: 400px;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  background: url(../img/Ellipse-2.png), url(../img/Ellipse-1.png);
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+  background-size: 15%;
+  padding: 0;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 section .focus {
-    background: url(../img/hands-on-keyboard.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-    min-height: 400px;
-    border-radius: 12px;
+  background: url(../img/hands-on-keyboard.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  min-height: 400px;
+  border-radius: 12px;
 }
 
-.vertL {
-    height: 5px;
-    width: 3vw;
-    background: var(--ixam-green);
+.approach .card {
+  background: url(../img/Ellipse-2.png), url(../img/Ellipse-1-gray.png);
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+  background-size: 8%, 12%;
+  padding: 0;
+  min-height: 140px;
+  background-color: #f3effa !important;
 }
+
+.approach-box {
+  width: 106px;
+  height: 106px;
+  background: #4c11ab;
+  border-radius: 38px;
+}
+
+.service-card {
+  position: relative;
+  min-height: 140px;
+  display: flex;
+  justify-content: center;
+}
+
+.service-card img {
+  position: absolute;
+  top: -30% !important;
+  right: 5% !important;
+  left: 0;
+}
+
+#owners {
+  background: url(../img/Ellipse-2.png), url(../img/Ellipse-1-gray.png);
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+  background-size: 8%, 12%;
+  min-height: 871px;
+}
+
+#owners .card {
+  min-height: 163px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(41, 9, 93, 0.1);
+  border-radius: 8px;
+  border-top: 8px solid rgba(41, 9, 93, 0.1) !important;
+}
+
 @media (max-width: 800px) {
   .hero-1 {
     background: url(../img/ixam-bg.png);
@@ -277,5 +338,19 @@ section .focus {
     background-size: 20%;
     background-repeat: no-repeat;
     background-position: 12% 37%;
+  }
+}
+
+@media (max-width: 768px) {
+  .vertL {
+    height: 5px;
+    width: 8vw;
+    background: var(--ixam-green);
+  }
+  .approach-box {
+    width: 56px;
+    height: 56px;
+    background: #4c11ab;
+    border-radius: 19px;
   }
 }
