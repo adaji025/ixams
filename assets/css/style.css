@@ -358,8 +358,12 @@ section .focus {
   height: 106px;
   background: #4c11ab;
   border-radius: 38px;
+  transition: all .5s ease-in-out;
 }
 
+.approach-box:hover {
+  background-color: var(--ixam-green);
+}
 .service-card {
   position: relative;
   min-height: 140px;
