@@ -319,6 +319,22 @@ section .focus {
   border-top: 8px solid rgba(41, 9, 93, 0.1) !important;
 }
 
+#client .card {
+  background: url(../img/oppen-quote.png), url(../img/close-quote.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  min-height: 250px;
+  background-color: #F3EFFA;
+  border-radius: 24px;
+}
+
+ #client .card img {
+  border-radius: 64px 32px;
+ }
+
+ #client .card span.pangea-regular {
+  font-size: 12px;
+ }
 @media (max-width: 800px) {
   .hero-1 {
     background: url(../img/ixam-bg.png);
@@ -339,6 +355,18 @@ section .focus {
     background-repeat: no-repeat;
     background-position: 12% 37%;
   }
+}
+
+footer {
+  background: #F3EFFA;
+}
+footer ul li {
+  list-style: none !important;
+}
+footer  a {
+  text-decoration: none;
+  color: inherit;
+  opacity: .8;
 }
 
 @media (max-width: 768px) {
