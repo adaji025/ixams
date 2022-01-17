@@ -40,12 +40,12 @@
               <a class="nav-link" href="#client">Client Stories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contact">Contact Us</a>
             </li>
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white px-3 py-2 pangea-medium btn ixam-blue-bg" href="#">Schedule Demo</a>
+              <a class="nav-link text-white px-3 py-2 pangea-medium btn ixam-blue-bg" href="#" data-bs-toggle="modal" data-bs-target="#scheduleDemo">Schedule Demo</a>
             </li>  
           </ul>
           
@@ -773,7 +773,7 @@
                 </div>
                 <div class="col-xxl-8 py-3">
                     <div class="container">
-                        <div class="row">
+                        <div class="row pangea-regular">
                             <div class="col-6 col-md-4 col-lg-2 py-2">
                                 <a href="#about">About iXam</a>
                             </div>
@@ -807,10 +807,80 @@
       <div class="container">
         <hr>
     </div>
-    <div class="container text-center pb-5">
-        <span class="d-block"> Copyright &copy <span class="year">2022</span> iXam Online Exam Proctor</span>
+    <div class="container text-center pt-2 pb-5">
+        <span class="d-block pangea-regular"> Copyright &copy <span class="year">2022</span> iXam Online Exam Proctor</span>
     </div>
     </footer>
+
+    <!-- Schedule a Demo Modal Starts -->
+
+    <div class="modal fade" id="scheduleDemo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title ixam-deep-blue-color pangea-bold" id="exampleModalLabel">Schedule a Demo</h5>
+              <button type="button" class="border-0 modal-close" data-bs-dismiss="modal" aria-label="Close">
+                <img src="./assets/img/modal-close.png" alt="" class="img-fluid">
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                  <div class="form-group pb-2">
+                      <label for="name" class="pangea-regular">Name</label>
+                      <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="form-group pb-2">
+                      <label for="name" class="pangea-regular">Organization</label>
+                      <input type="text" class="form-control" placeholder="Name of Organization">
+                  </div>
+                  <div class="form-group pb-2">
+                      <label for="name" class="pangea-regular">Contact</label>
+                      <input type="text" class="form-control" placeholder="Contact Tel No.">
+                  </div>
+                  <div class="form-group pb-2">
+                      <label for="name" class="pangea-regular">Email</label>
+                      <input type="text" class="form-control" placeholder="Email Address">
+                  </div>
+                  <div class="form-group pb-2">
+                      <label for="name" class="pangea-regular">Purpose</label>
+                      <input type="text" class="form-control" placeholder="Purpose of Demo">
+                  </div>
+                  <button type="submit" class="btn form-control py-2 my-3 ixam-blue-bg text-white pangea-medium">Schedule a Demo</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Schedule a Demo Modal Ends -->
+
+    <!-- Contact Modal Starts -->
+
+    <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title ixam-deep-blue-color pangea-bold" id="exampleModalLabel">Help Desk</h5>
+              <button type="button" class="border-0 modal-close" data-bs-dismiss="modal" aria-label="Close">
+                <img src="./assets/img/modal-close.png" alt="" class="img-fluid">
+              </button>
+            </div>
+            <div class="modal-body text-center py-5">
+              <a href="#">
+                  <img src="./assets/img/call-us.png" alt="call us" class="img-fluid px-3">
+              </a>
+              <a href="#">
+                  <img src="./assets/img/email.png" alt="call us" class="img-fluid px-3">
+              </a>
+              <a href="#">
+                  <img src="./assets/img/chat.png" alt="call us" class="img-fluid px-3">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Modal Ends -->
 
     </div>
     

@@ -446,13 +446,23 @@ footer {
 }
 footer ul li {
   list-style: none !important;
+
 }
 footer  a {
   text-decoration: none;
   color: inherit;
+  font-size: 15px !important;
   opacity: .8;
 }
 
+.modal-close {
+  background: none !important;
+}
+input::placeholder {
+  font-family: "pangea afrikan trial", sans-serif !important;
+  font-weight: 400 !important;
+  opacity: .8 !important;
+}
 @media (max-width: 768px) {
   .vertL {
     height: 5px;
