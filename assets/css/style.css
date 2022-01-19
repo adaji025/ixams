@@ -80,6 +80,10 @@ ul {
   padding: unset;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   background: rgba(255, 255, 255, 0.8) !important;
   -webkit-backdrop-filter: blur(2px) !important;
@@ -236,6 +240,28 @@ nav {
 .hero-4 div p {
   max-width: 600px;
   font-size: 18px;
+}
+
+.grow-2 {
+  animation: grow-2 2s ease 1;
+}
+@keyframes grow-2{
+  from {transform: scale(.8)}
+  to {transform: scale(1);}
+}
+
+.grow {
+  animation: grow 2s ease 1;
+}
+
+/* @keyframes grow {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+} */
+
+@keyframes grow {
+  from { transform: scale(0);}
+  to {transform: scale(1);}
 }
 
 section .about .card {
