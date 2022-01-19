@@ -359,10 +359,12 @@ section .focus {
   background: #4c11ab;
   border-radius: 38px;
   transition: all .5s ease-in-out;
+  cursor: pointer;
 }
 
 .approach-box:hover {
   background-color: var(--ixam-green);
+  
 }
 .service-card {
   position: relative;
